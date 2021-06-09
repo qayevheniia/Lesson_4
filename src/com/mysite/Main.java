@@ -5,56 +5,29 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        // printd all the values divisible by 7 in the range of 1 to 100 in reverse order (for)
-        // int i = 0;
-
-        // do {
-        //if ((i % 7) == 0)
-        // System.out.print(i);
-        //  System.out.print((","));
-        //  i++;
-        //  }
-
-        // while (i < 100);
-
-
-//
-
-//        int[] array= {10, 14, 18};
-//        int expected = 13;
-//        boolean result = false;
-//
-//         {
-////            if (array[i]==expected) {
-////                result = true;
-////                System.out.println (result) ;
-////                break;
-////
-////            }
-////            System.out.println(result);
-////       }   for (int i=0; i < array.length; i++)
-//
-//
-//        int height = 2;
-//        int width = 5;
-//        int i = 0;
-//
-//
-//        while (i < height) {
-//
-//            i++;
-//            {
-//
-//                for (int a = 0; a < width; a++) {
-//
-//                    System.out.print("*");
-//                }
-//
-//            }
-//            System.out.println(" ");
-//        }
-
         Scanner in= new Scanner(System.in);
+
+        System.out.println("Enter height");
+        int height = in.nextInt();
+
+        System.out.println("Enter width");
+        int width = in.nextInt();
+        int i = 0;
+
+        while (i < height) {
+
+            i++;
+            {
+
+                for (int a = 0; a < width; a++) {
+
+                    System.out.print("*");
+                }
+
+            }
+            System.out.println(" ");
+        }
+
 
         System.out.println("Please, enter your pass");
 
@@ -62,7 +35,7 @@ public class Main {
         String expected = "yev";
         int retries= 3;
 
-        for (int i=0;  i < retries ; i++){
+        for (int a=0;  a < retries ; a++){
             String  pass= in.next();
 
 
@@ -71,7 +44,7 @@ public class Main {
                 System.out.println("Correct, welcome back");
                 break;
             }
-            else if ((i==2) && (expected!=pass)){
+            else if ((a==2) && (expected!=pass)){
                 System.out.println("Sorry but you have been locked out");
 
                 }
@@ -81,9 +54,44 @@ public class Main {
             }
             }
 
-        }
 
+
+//        Write a program that finds the summation of every number from 1 to num.
+//        The number will always be a positive integer greater than 0.
+
+//        https://nimb.ws/8PmHWr
+
+
+        System.out.println("Enter a positive integer");
+        int num = in.nextInt();
+
+        int sum = 0;
+        for(int b = 0; b <= num; b++) {
+            sum += b;
+        }
+        System.out.println(sum);
+
+//        Write a function called repeatStr which repeats the given string string exactly n times.
+//
+//        repeatStr(6, "I") // "IIIIII"
+//        repeatStr(5, "Hello") // "HelloHelloHelloHelloHello"
+
+//        https://nimb.ws/tmQD1c
+
+        System.out.println("Enter time");
+        int time = in.nextInt();
+
+        System.out.println("Enter word");
+        String word=in.next();
+
+        for (int c=1; c<=time; c++) {
+            System.out.print(word);
+        }
     }
+
+}
+
+
 
     class Additional_task {
         public static void main(String[] args) {
@@ -113,15 +121,19 @@ public class Main {
 
 
             for (int i = 0; i < arr.length; i++) {
-                for (int j = i+1; j < arr.length; j++) {
+                for (int j = i + 1; j < arr.length; j++) {
                     if (arr[i] == arr[j]) {
                         System.out.println(arr[j]);
                     }
                 }
-
             }
         }
     }
+
+
+
+
+
 
 
 
