@@ -201,6 +201,7 @@ public class Main {
             System.out.println("Sum of all the elements of an array: " + a);
 
 //        6.    https://nimb.ws/KHZRv0
+//          7. https://nimb.ws/x7G3Pr
 //
         }
         }
